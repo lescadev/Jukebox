@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const jwt = require("jwt-simple");
 const passwordHash = require("password-hash");
 
-const userSchema = mongoose.schema(
+const userSchema = mongoose.Schema(
   {
     email: {
       type: String,
