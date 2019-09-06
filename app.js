@@ -17,3 +17,14 @@ let app = express();
 let server = app.listen(process.env.PORT, () => {
   console.log(`Le server est ok sur le port ${process.env.PORT}`);
 });
+
+io.on('connection', (socket)=>{
+    socket.on('vote', (data) => {
+        //TODO: Si la barre de soulance est au max on switch de vidéo
+        io.emit('updateVote', data);
+    })
+    socket.on('message', (message)=>{
+        //Pour le chat
+        io.emit('message', message);
+    })
+})
