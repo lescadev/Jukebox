@@ -22,6 +22,7 @@ header{
         color: white;
         border: 1px solid #37FF00;
         box-shadow: 0 7px 15px 0 rgba(0,0,0,0.50), 0 4px 13px 6px rgba(34,159,0,0.80);
+        transition: all ease 500ms;
         &:hover{
             background-color: white;
             color: black;
