@@ -1,0 +1,32 @@
+header{
+
+    .menu-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding: 0px 40px 0 40px;
+    }
+
+    #title{
+    color: white;
+    font-size: 42px;
+    }
+
+    #login{
+        background-color: rgb(139, 139, 139);
+        border: none;
+        border-radius: 19px;
+        padding: 10px 30px;
+        font-size: 16px;
+        color: white;
+        border: 1px solid #37FF00;
+        box-shadow: 0 7px 15px 0 rgba(0,0,0,0.50), 0 4px 13px 6px rgba(34,159,0,0.80);
+        &:hover{
+            background-color: white;
+            color: black;
+            border: 1px solid #37FF00;
+            box-shadow: 0 7px 15px 0 rgba(0,0,0,0.50), 0 4px 13px 6px rgba(34,159,0,0.80);
+        }
+    }
+}
