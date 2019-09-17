@@ -6,6 +6,7 @@ header{
         align-items: center;
         list-style: none;
         padding: 0px 40px 0 40px;
+        margin: 0;
     }
 
     #title{
@@ -15,12 +16,12 @@ header{
 
     #login{
         cursor: pointer;
-        background-color: rgb(139, 139, 139);
+        background-color: rgb(46, 46, 46);
         border: none;
         border-radius: 19px;
         padding: 10px 30px;
         font-size: 16px;
-        color: white;
+        color: rgb(199, 199, 199);
         border: 1px solid #37FF00;
         box-shadow: 0 7px 15px 0 rgba(0,0,0,0.50), 0 4px 13px 6px rgba(34,159,0,0.80);
         transition: all ease 500ms;
