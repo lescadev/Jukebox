@@ -42,6 +42,20 @@ const Elements = () => {
             </div>
             <div id="search_element">
                 <input type="search" name="search" id="recherche_youtube" placeholder="Rechercher une musique..." />
+                <a  id="ajout_musique" href="#popup2">Ajouter</a>
+                <div id="popup2" className="overlay">
+	                <div className="popup">
+		                <a className="close" href="none">&times;</a>
+		                <div className="content">
+                            <form>
+                                <h3>url youtube de la musique récupérée</h3> <br />
+                                <img src="http://placehold.it/100x100" alt="miniature youtube" />
+                                <p> Photo + titre de la musique récupérée</p> <br />
+                                <button type="submit">Confirmer</button>
+                            </form>
+		                </div>
+	                </div>
+                </div>
             </div>
         </div>
     )

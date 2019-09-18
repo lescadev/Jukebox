@@ -16,6 +16,7 @@ header{
 
     #login{
         cursor: pointer;
+        text-decoration: none;
         background-color: rgb(46, 46, 46);
         border: none;
         border-radius: 19px;
@@ -31,5 +32,49 @@ header{
             border: 1px solid #37FF00;
             box-shadow: 0 7px 15px 0 rgba(0,0,0,0.50), 0 4px 13px 6px rgba(34,159,0,0.80);
         }
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 4;
+        &:target {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .popup {
+        margin: 70px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 30%;
+        position: relative;
+        transition: all 5s ease-in-out;
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: all 200ms;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+            &:hover {
+                color: #37FF00;
+            }
+        }
+    }
+
+    form{
+        text-align: center;
     }
 }
